@@ -5,7 +5,7 @@ class LoadMap extends React.Component {
 
    render() {
        let showMap;
-       let url = "https://maps.google.com/maps?q=" + this.props.citySelected + "&t=&z=13&ie=UTF8&iwloc=&output=embed"
+       let url = "https://maps.google.com/maps?q="+this.props.citySelected+"&t=&z=10&ie=UTF8&iwloc=&output=embed"
        if(this.props.citySelected !== undefined && this.props.citySelected !== ""){
            showMap = <div className="col-lg-7">
                <div id="map-container-google-1" className="z-depth-1-half map-container map-pos" style={{ height: 500 }}>

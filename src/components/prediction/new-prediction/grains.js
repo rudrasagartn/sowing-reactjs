@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 class GrainDropdown extends React.Component {
 
     componentDidMount() {
-        fetch("http://localhost:8080/getStates").then(res => res.json()).then((result) => {
+        fetch("http://localhost:8080/getGrains").then(res => res.json()).then((result) => {
+            {/*alert(result);*/}
             this.props.loadGrains(result)
         })
     }
