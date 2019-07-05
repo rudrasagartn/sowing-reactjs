@@ -2,7 +2,9 @@ import React from 'react'
 import StatesDropdown from './states'
 import CityDropdown from './cities'
 import GrainDropdown from './grains'
+import SoilDropdown from './soil'
 import LoadMap from './map'
+import SowingDate from './sowingdate'
 
 class NewPrediction extends React.Component {
 
@@ -37,6 +39,7 @@ class NewPrediction extends React.Component {
                         <td>
                             <GrainDropdown />
                         </td>
+                        
                     </tr>
                     <tr>
                         <td></td>
@@ -49,7 +52,10 @@ class NewPrediction extends React.Component {
 
             </div>
             <div className="row">
-                <div className="col-xs-12 col-md-8">Plowing date : </div>
+            <div className="col-xs-12 col-md-1">Soil Type</div>
+                <div className="col-xs-10 col-md-2"><SoilDropdown/> </div>
+                <div className="col-xs-10 col-md-1">Sowingdate</div>
+                <div className="col-xs-10 col-md-2"><SowingDate/> </div>
                 <div className="col-xs-6 col-md-4"><LoadMap /></div>
             </div>
         </div>
